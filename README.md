@@ -101,5 +101,12 @@ To evaluate CountZES on vgg, run:
 
 ![Qualitative_results_supp](https://github.com/user-attachments/assets/4291d12b-135b-43da-9bf8-21007756f6c4)
 
+## License
+[![Code License: PolyForm Noncommercial](https://img.shields.io/badge/Code%20License-PolyForm%20Noncommercial%201.0.0-orange.svg)](LICENSE)
+
+**Usage and License Notices**: The model and pretrained checkpoints are intended and licensed for research use only.
+
+## ✒️ Citation
+
             
 
