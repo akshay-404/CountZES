@@ -35,7 +35,7 @@ Clone the repo and create conda environment following the instructions given bel
     conda activate countzes
     
     conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=12.1 -c pytorch -c nvidia
-    (You can also change it as per your platform following the link given above)
+    (can be changed as per the platform following the link above)
 
     pip install -r requirements.txt
 
@@ -60,7 +60,7 @@ We conduct experiments over five datasets. You can download each from the given 
           │  ├─cells/
 
 ### 🔩 Model Weights
-Please download pretrained weights of SAM from [here](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth). Also, download weights for DSALVANet pretrained on FSC-147 from [here](https://drive.google.com/file/d/1julzH9MJSK1xTGchb1r0CXdZ2wzF5-Kp/view?usp=sharing) and weights for GroungdingDINO from [here](https://drive.google.com/file/d/13rV6dzRwWCVZYWpnmiaVwRDIDC28d82g/view?usp=sharing). Download weights for CounTR pretrained on FSC-147 and CARPK dataset from [here (https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?pli=1).
+Please download pretrained weights of SAM from [here](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth). Also, download weights for DSALVANet pretrained on FSC-147 from [here](https://drive.google.com/file/d/1julzH9MJSK1xTGchb1r0CXdZ2wzF5-Kp/view?usp=sharing) and weights for GroungdingDINO from [here](https://drive.google.com/file/d/13rV6dzRwWCVZYWpnmiaVwRDIDC28d82g/view?usp=sharing). Download weights for CounTR pretrained on FSC-147 and CARPK dataset from [here](https://github.com/Verg-Avesta/CounTR).
 
     data/
     sam_vit_h_4b8939.pth
@@ -93,7 +93,7 @@ To evaluate CountZES on MBM dataset, run:
 
     python countzes_mbm.py
 
-To evaluate CountZES on vgg, run:
+To evaluate CountZES on vgg dataset, run:
 
     python countzes_vgg.py
 
