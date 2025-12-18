@@ -29,7 +29,7 @@ Our code requires pytorch>=1.7 and torchvision>=0.8. For compatibility check [he
 Clone the repo and create conda environment following the instructions given below:
 
     git clone https://github.com/Muhammad-Ibraheem-Siddiqui/CountZES.git
-    cd countzes
+    cd CountZES
 
     conda create -n countzes python=3.8
     conda activate countzes
