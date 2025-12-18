@@ -35,6 +35,5 @@ model_ts*.txt
 _darcs
 
 # output 
-data
 work_dirs
 
