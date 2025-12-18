@@ -104,7 +104,7 @@ To evaluate CountZES on vgg dataset, run:
 ## License
 [![Code License: PolyForm Noncommercial](https://img.shields.io/badge/Code%20License-PolyForm%20Noncommercial%201.0.0-orange.svg)](LICENSE)
 
-**Usage and License Notices**: The model and pretrained checkpoints are intended and licensed for research use only.
+**Usage and License Notices**: Intended and licensed for research use only.
 
 ## ✒️ Citation
 
