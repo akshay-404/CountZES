@@ -13,7 +13,7 @@ Object counting in complex scenes remains challenging, particularly in the zero-
 
 ## 🔥 News
 * We release the code for **CountZES** 🚀
-* CountZES paper is released [arXiv Link]()
+* CountZES paper is released [arXiv Link](https://arxiv.org/abs/2512.16415)
 ## 🌟 Highlight
 We introduce **CountZES** 🚀 for **Object Counting via Zero-Shot Exemplar Selection**. 
 
@@ -110,6 +110,7 @@ To evaluate CountZES on vgg dataset, run:
 Our repo benefits from [SAM](https://github.com/facebookresearch/segment-anything), [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO), [CLIP](https://github.com/openai/CLIP), [PerSense](https://github.com/muhammad-ibraheem-siddiqui/persense), [DSALVANet](https://github.com/kadvinj/DSALVANet?tab=readme-ov-file) and [CounTR](https://verg-avesta.github.io/CounTR_Webpage/). Thanks for their great work.
 
 ## ✒️ Citation
+
 
             
 
