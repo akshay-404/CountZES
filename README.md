@@ -111,6 +111,13 @@ Our repo benefits from [SAM](https://github.com/facebookresearch/segment-anythin
 
 ## ✒️ Citation
 
+    @article{siddiqui2025countzes,
+      title={CountZES: Counting via Zero-Shot Exemplar Selection},
+      author={Siddiqui, Muhammad Ibraheem and Khan, Muhammad Haris},
+      journal={arXiv preprint arXiv:2512.16415},
+      year={2025}
+    }
+
 
             
 
