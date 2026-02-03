@@ -4,11 +4,8 @@
 Object counting in complex scenes remains challenging, particularly in the zero-shot setting, where the goal is to count instances of unseen categories specified only by a class name. Existing zero-shot object counting (ZOC) methods that infer exemplars from text either rely on open-vocabulary detectors, which often yield multi-instance candidates, or on random patch sampling, which fails to accurately delineate object instances. To address this, we propose CountZES, a training-free framework for object counting via zero-shot exemplar selection. CountZES progressively discovers diverse exemplars through three synergistic stages: Detection-Anchored Exemplar (DAE), Density-Guided Exemplar (DGE), and Feature-Consensus Exemplar (FCE). DAE refines open-vocabulary detections to isolate precise single-instance exemplars. DGE introduces a density-driven, self-supervised paradigm to identify statistically consistent and semantically compact exemplars, while FCE reinforces visual coherence through feature-space clustering. Together, these stages yield a diverse, complementary exemplar set that balances textual grounding, count consistency, and feature representativeness. Experiments on diverse datasets demonstrate CountZES superior performance among ZOC methods while generalizing effectively across natural, aerial and medical domains.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/84efb00d-6d4e-48c7-a0fe-b87a1e50cac4" width="550">
+  <img src="https://github.com/user-attachments/assets/a35ce198-ef8e-406c-84b4-475f6aec7a89" width="550">
 </p>
-
-
-
 
 
 ## 🔥 News
@@ -20,8 +17,7 @@ We introduce **CountZES** 🚀 for **Object Counting via Zero-Shot Exemplar Sele
 👑 **End-to-End**  
 ❄️ **Training-free**  
 
-![Main_figure_final](https://github.com/user-attachments/assets/4f087fc2-c5f9-497c-8361-7345fff4c969)
-
+![Main_figure_arxiv](https://github.com/user-attachments/assets/aeb4573b-e3e2-4274-a6f5-42740412307b)
 ## 🛠️ Requirements
 
 ### Installation
