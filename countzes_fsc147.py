@@ -53,8 +53,8 @@ def main():
     elif args.sam_type == 'vit_b':
         sam_type, sam_ckpt = 'vit_b', 'data/sam_vit_b_01ec64.pth'
         sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).to(device=device)
-    elif args.sam_type == 'vit_t':
-        sam_type, sam_ckpt = 'vit_t', 'weights/mobile_sam.pt'
+    elif args.sam_type == 'vit_l':
+        sam_type, sam_ckpt = 'vit_l', 'data/sam_vit_l_0b3195.pth'
         sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).to(device=device)
     else:
         raise ValueError(f"Unsupported sam_type '{args.sam_type}'. Choose from 'vit_b', 'vit_h', or 'vit_t'.")
