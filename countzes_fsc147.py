@@ -33,8 +33,8 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=str, default='./data')
     parser.add_argument('--outdir', type=str, default='countzes_fsc147')
-    parser.add_argument('--ckpt', type=str, default='./sam_vit_h_4b8939.pth')
-    parser.add_argument('--sam_type', type=str, default='vit_h')
+    parser.add_argument('--ckpt', type=str, default='./data/sam_vit_b_01ec64.pth')
+    parser.add_argument('--sam_type', type=str, default='vit_b')
     parser.add_argument('--ref_idx', type=str, default='00')
     parser.add_argument('--visualize', type=bool, default= False) # Change to True for visualization
     parser.add_argument('--fsoc', type=str, default='countr') #use countr for COUNTR BMVC 22   
@@ -46,14 +46,19 @@ def main():
     print("Args:", args)
 
     print("======> Load SAM" )
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     if args.sam_type == 'vit_h':
         sam_type, sam_ckpt = 'vit_h', 'data/sam_vit_h_4b8939.pth'
-        sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).cuda()
+        sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).to(device=device)
+    elif args.sam_type == 'vit_b':
+        sam_type, sam_ckpt = 'vit_b', 'data/sam_vit_b_01ec64.pth'
+        sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).to(device=device)
     elif args.sam_type == 'vit_t':
         sam_type, sam_ckpt = 'vit_t', 'weights/mobile_sam.pt'
-        device = "cuda" if torch.cuda.is_available() else "cpu"
         sam = sam_model_registry[sam_type](checkpoint=sam_ckpt).to(device=device)
-        sam.eval()
+    else:
+        raise ValueError(f"Unsupported sam_type '{args.sam_type}'. Choose from 'vit_b', 'vit_h', or 'vit_t'.")
+    sam.eval()
     print("======> Done" )  
 
     print("======> Load Grounding Detector" )
@@ -70,7 +75,7 @@ def main():
             model_countr.to(device)
             model_without_ddp = model_countr
 
-            checkpoint = torch.load('./CounTR/output_allnew_dir/CARPK.pth', map_location='cpu')
+            checkpoint = torch.load('./CounTR/output_allnew_dir/CARPK.pth', map_location='cpu', weights_only=False)
             model_without_ddp.load_state_dict(checkpoint['model'], strict=False)
             
 

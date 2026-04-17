@@ -17,6 +17,14 @@ wheels/
 *.ts
 model_ts*.txt
 
+# dataset
+*.jpg
+*.png
+*.jpeg
+ImageClasses*
+Train_Test*
+annotation*
+
 # onnx models
 *.onnx
 
